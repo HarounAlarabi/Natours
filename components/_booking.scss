@@ -1,0 +1,53 @@
+.booking {
+  background-image: linear-gradient(105deg,
+      rgba($color-white, 0.8) 0%,
+      rgba($color-white, 0.8) 50%,
+      transparent 50%),
+    url(../img/nat-10.jpg);
+  background-size: 100%;
+
+
+
+  @include resposiveDesign(tablet) {
+    background-image: linear-gradient(105deg,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 70%,
+        transparent 65%),
+      url(../img/nat-10.jpg);
+    background-size: cover;
+
+  }
+
+  @include resposiveDesign(mini-tablet) {
+    background-image: linear-gradient(to right,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 100%),
+      url(../img/nat-10.jpg);
+
+  }
+
+  @include resposiveDesign(phone) {
+    width: 90%;
+    margin: 0 auto;
+
+
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include resposiveDesign(tablet) {
+      width: 70%;
+
+    }
+
+    @include resposiveDesign(mini-tablet) {
+      width: 100%;
+    }
+
+
+  }
+
+
+}
